@@ -1,11 +1,12 @@
 # Genetic algorithm
-## Implementation of genetic algoithm in python.
-Algorithm is looking for the best placement matrix for the machines [represented by numbers], which have a values, that effect on the final cost and which depends on the pair of the machines. 
+Algorithm is looking for the best placement matrix for the machines (represented by numbers). Best placement is defined by the lowest summary cost of the placement, which is counted as followed ⬇️
 
-The goal is to reduce the summary cost to the minimum.
-### The equation that counts the final cost: ∑FijCijDij
-* Fij – the flow of the material between i and j
-* Cij – the cost of servicing the materials jest to koszt obsługi materiałów between i and j
-* Dij – the distance between i and j.
+### The equation that counts the final cost: ∑F<sub>ij</sub>C<sub>ij</sub>D<sub>ij</sub>
+* F<sub>ij</sub> – the flow of the material between i and j
+* C<sub>ij</sub> – the cost of servicing the materials between i and j
+* D<sub>ij</sub> – the distance between i and j.
 
-Formula used to count distance between two machines (i and j): 𝐷 =|𝑥 −𝑥|+|𝑦 −𝑦|
+Formula used to count distance between two machines (i and j): 𝐷 = |𝑥<sub>i</sub> − 𝑥<sub>j</sub>| + |𝑦<sub>i</sub> − 𝑦<sub>j</sub>|
+
+## Tech stack
+![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
